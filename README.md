@@ -58,8 +58,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-
+  De test deed ik samen met Kim. Ik kwam achter de volgende dingen:
+  - Het is ontzettend vermoeiend
+  - Er word veel gesproken, door de voiceover
+  - De taal van de html staat op 'nl' terwijl mijn website in het engels is. Daardoor klinken de teksten vreemd en vaag als het wordt uitgesproken door een Nederlandse stem.
+  - Kim vond de alternatieve teksten bij de afbeeldingen iets te lang.
 </details>
 
 
@@ -70,7 +73,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/CMD J2_Blok 2_Frontend Development.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -90,8 +93,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Tijdens de eerste 2 weken van Frontend moest ik heel erg wennen aan code schrijven. De eerste opdrachten gingen goed (over html en CSS) maar in de tweede week had ik meer moeite met het begrijpen en toepassen van Javascript.
 
   ### Agenda voor meeting
   samen met je groepje opstellen

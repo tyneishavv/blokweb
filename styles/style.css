@@ -1,3 +1,5 @@
+@import url(https://use.typekit.net/xkg3gtz.css);
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -7,6 +9,14 @@
 
 
 
+/**************/
+/*    BODY    */
+/**************/
+
+html, body{
+	height: 100%;
+	margin: 0;
+}
 
 
 
@@ -14,18 +24,92 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	--white:#ffffff;
+	--black:#000000;
+	--edgewater:#c8e0d4;
+	--spindle:#c6e3ee;
+	--twilight:#e2c7d6;
+	--pink:#f5d0ba;
+	--deluge:#7a65a5;
+	--victoria:#4c4294;
+	--martinique:#412f59;
+	--purple:#61439b;
+
+
+
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#ffffff;
+}
+
+
+
+/****************************/
+/*   FONT + TEKST STYLING   */
+/****************************/
+*{
+	text-decoration: none;
+}
+body{
+	background-color: var(--color-background);
+}
+
+h1, h2, h3{
+	font-family: "roc-grotesk-compressed";
+	font-size: 100px;
+	text-transform: uppercase;
+}
+
+p, ul {
+	font-family: "roc-grotesk";
+}
+
+button {
+	font-family: "roc-grotesk";
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+
+
+/****************/
+/*    HEADER    */
+/****************/
+section:nth-child(1){
+	background-color: var(--twilight);
+	color: var(--victoria);
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 0%;
+	font-size: 0.9em;
+
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;	
+}
+
+
+
+/****************/
+/*     NAV      */
+/****************/
+ul{
+	list-style-type: none;
+}
+
+nav, ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	color: var(--victoria);
+	background-color: #8f8998;
 }
 
 
 
 
-
 /****************/
-/* JOUW STYLING */
+/*    HEADER    */
 /****************/
-
-/* jouw code */
-

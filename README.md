@@ -59,8 +59,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   De test deed ik samen met Kim. Ik kwam achter de volgende dingen:
-  - Het is ontzettend vermoeiend
-  - Er word veel gesproken, door de voiceover
+  - Het is ontzettend vermoeiend om telkens te moeten luisteren naar een voiceover
+  - Er wordt veel gesproken, door de voiceover
   - De taal van de html staat op 'nl' terwijl mijn website in het engels is. Daardoor klinken de teksten vreemd en vaag als het wordt uitgesproken door een Nederlandse stem.
   - Kim vond de alternatieve teksten bij de afbeeldingen iets te lang.
 </details>
@@ -94,24 +94,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Tijdens de eerste 2 weken van Frontend moest ik heel erg wennen aan code schrijven. De eerste opdrachten gingen goed (over html en CSS) maar in de tweede week had ik meer moeite met het begrijpen en toepassen van Javascript.
+  <img src="readme-images/w2_voortgang_divjes.png" width="375px" alt="gebruik van veel divjes aan het begin van het html-bestand">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3    | 
+  | ---            | ---                | ---          |
+  | Divjes bespreken| Michelle wilde     | Dante kwam   |
+  | Article gebruik| weten of zij teveel| erachter dat |
+  | Section gebruik| div'jes had gebruikt| een section | 
+  | ...            |                    |met H2 moet   |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Teveel divjes in het begin. Pas het aan naar sections en in de sections verschillende articles.
+  - Vraag: Moet de 'p' review buiten de section staan? 'Ja, de review moet buiten de section staan, in de header.'
+  - 'Vergeet niet om de header en footer aan te maken, en de nav verder te maken.'
+  - Belangrijkste is om mijn html volledig af te ronden en daarna pas door te gaan met CSS.
+  - Divjes zijn niet toegankelijk. Een persoon die de voiceover functie gebruikt kan namelijk een Section skippen maar een div wordt gezien als leeg vlak, dit kan dus niet worden geskipt.
 
 </details>
 

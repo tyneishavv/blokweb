@@ -158,11 +158,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Contrast voor iconen is hoog;
   - Contrast van teksten boven afbeeldingen is hoog;
   - Er wordt geen gebruik gemaakt van ::selection.
-
-
-
-
 </details>
+
+
 
 
 
@@ -172,14 +170,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/ontleden_home.jpg" width="375px" alt="breakdown van de hele homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  <img src="images/ontleden_product.jpg" width="375px" alt="breakdown van de productpagina">
 </details>
 
 
@@ -192,26 +186,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb de HTML van mijn homepagina geschreven maar ik heb moeite met het ontwikkelen van de carrousels, omdat ik niet weet of ik alle onderdelen (img's, p's en a's) kan toevoegen in de ul. Ook weet ik niet of ik gebruik maak van te veel sections, en dat ik wellicht andere HTML elementen moet gebruiken.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Tyneisha
+  - Wat moet de volgorde zijn van mijn <ul>?
+  - Wanneer moet ik aria-labels gebruiken?
+  - Wat is de beste manier om mijn carrousels te ontwikkelen?
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Lam
+  - X
 
+  Roan
+  - Wat zijn de correcte elements voor: tijd, prijs, etc.
+  - Gebruik van elements, is nu juist?
+  - Is de nesting in de footer correct?
+  - Heb ik de SVG's juist uitgevoerdt
+  - Code voor invis class.
+
+  Sidney
+  - html sections?
+  - css carousel
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  - In de head had ik een nav gebruikt voor een scroll animatie waar het laatste nieuws en aanbiedingen worden getoond. De studentassistente had laten weten dat dit niet nodig was. Ik hoefde dit niet in de nav te plaatsen en kon het als <a> plaatsen in de code; 
+  - De sections kunnen laten worden gestijld door de h2 onder de img's te plaatsen;
+  - Probeer z.s.m. de img's te plaatsen in je document en de alt tekst erin toe te voegen;
+  - Sections moeten een heading bevatten.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  <img src="images/voortgangsgesprekken/vg1_home1.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 1/2">
+  <img src="images/voortgangsgesprekken/vg1_home2.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 2/2">
 
 </details>
 
@@ -229,13 +234,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Tyneisha
+  - X
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Lam
+  - X
+
+  Roan
+  - X
+
+  Sidney
+  - X
+
+
 
 
   ### Verslag van meeting

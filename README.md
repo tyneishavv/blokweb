@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Milk Bar homepagina
-  <img src="images/Homepagina_Mobiel.png" width="375px" alt="Homepagina">
+  <img src="readme-images/Homepagina_Mobiel.png" width="375px" alt="Homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Milk Bar product-pagina van Birthday Cake
-  <img src="images/Productpagina_Mobiel.png" width="375px" alt="Productpagina om de Birthday Cake te bestellen">
+  <img src="readme-images/Productpagina_Mobiel.png" width="375px" alt="Productpagina om de Birthday Cake te bestellen">
  
 </details>
 
@@ -71,15 +71,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - CSS die geschreven is in de HTML
 
   Ook is er een "polite"-message wanneer de voice over wordt geactiveerd op de website. De website geeft dan aan dat als er feedback is voor de website, dat dit kan worden verstuurd naar het bedrijf. 
-  <img src="images/toegankelijkheidtest_1/globalcode_img2.png" width="375px" alt="HTML Validator toont dat navigation een onnodige rol heeft in de nav">
-  <img src="images/toegankelijkheidtest_1/globalcode_img3.png" width="375px" alt="HTML Validator toont dat img elementen geen alt teksten bevatten">
-  <img src="images/toegankelijkheidtest_1/globalcode_img4.png" width="375px" alt="HTML Validator toont dat er geen space is tussen attributen">
+  <img src="readme-images/toegankelijkheidtest_1/globalcode_img2.png" width="375px" alt="HTML Validator toont dat navigation een onnodige rol heeft in de nav">
+  <img src="readme-images/toegankelijkheidtest_1/globalcode_img3.png" width="375px" alt="HTML Validator toont dat img elementen geen alt teksten bevatten">
+  <img src="readme-images/toegankelijkheidtest_1/globalcode_img4.png" width="375px" alt="HTML Validator toont dat er geen space is tussen attributen">
 
   Elke webpagina krijgt een unieke titel.
-  <img src="images/toegankelijkheidtest_1/globalcode_img5.png" width="375px" alt="HTML Validator toont aan dat de webpagina een passende titel heeft voor de pagina">
+  <img src="readme-images/toegankelijkheidtest_1/globalcode_img5.png" width="375px" alt="HTML Validator toont aan dat de webpagina een passende titel heeft voor de pagina">
 
   Lang attribute wordt in de HTML geplaatst om de taal van de pagina aan te duiden. Verder is de viewport zoom niet uitgezet.
-  <img src="images/toegankelijkheidtest_1/globalcode_img6.png" width="375px" alt="Lang attribuut wordt gebruikt om aan te geven dat het een Engelse pagina is">
+  <img src="readme-images/toegankelijkheidtest_1/globalcode_img6.png" width="375px" alt="Lang attribuut wordt gebruikt om aan te geven dat het een Engelse pagina is">
 
   ##### Keyboard
   Er is een duidelijke visuele focus stijl voor interactieve elementen en er kan makkelijk worden genavigeerd door middel van de toetsenbord input. 
@@ -96,18 +96,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De buttons en links zijn groot genoeg om geactiveerd te worden;
   - Er is niet genoeg ruimte tussen interactieve items en een scroll-gebied:
     - Afbeeldingen zijn namelijk ook klikbaar. Dit kan zorgen voor frustratie bij handtrillingen.
-  <img src="images/toegankelijkheidtest_1/mobileandtouch_img1.png" width="375px" alt="pijltjes zijn verwijderd bij de mobiele versie in een carrousel">
+  <img src="readme-images/toegankelijkheidtest_1/mobileandtouch_img1.png" width="375px" alt="pijltjes zijn verwijderd bij de mobiele versie in een carrousel">
 
   ##### Headings
   Er wordt op de webpagina's gebruik gemaakt van heading elementen om nieuwe content te introduceren. De indeling is soms wel verschillend. Zo kan er als eerste een afbeelding worden geplaatst en daarna de heading. 
 
   - Er is op de homepagina gebruik gemaakt van meer dan 1 H1
   - Er worden dus ook meerdere heading levels gebruikt. De H2's en H3's worden op de juiste manier geïmplementeerd, maar er is wel meerdere keren gebruik gemaakt van de H1 op de homepagina. Dit zorgt ervoor dat de hiërarchie niet meer klopt.
-  <img src="images/toegankelijkheidtest_1/headings_img1.jpg" width="375px" alt="Overzicht van Headings op de homepagina">
+  <img src="readme-images/toegankelijkheidtest_1/headings_img1.jpg" width="375px" alt="Overzicht van Headings op de homepagina">
 
   ##### Lists
   Voor list content wordt er gebruik gemaakt van divs. Voor de verschillende carrousel secties wordt er geen gebruik gemaakt van een ul selector, maar een div.
-  <img src="images/toegankelijkheidtest_1/lists_img1.png" width="375px" alt="Code waarin de carrousel is gemaakt met een div in plaats van een ul">  
+  <img src="readme-images/toegankelijkheidtest_1/lists_img1.png" width="375px" alt="Code waarin de carrousel is gemaakt met een div in plaats van een ul">  
 
   ##### Images
   - De HTML Validator had al aangegeven dat er voor een een grote hoeveelheid img's geen alt-tekst is gemaakt. Ik had wel een aria-label gezien bij de hero-grid. Hier werd aangegeven dat er werd doorgelinkt naar de Collection-webpagina van de website.
@@ -121,14 +121,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - <a> = navigeren naar een andere pagina, sectie, bestand of extern adres.
   - <button> = een actie uitvoeren binnen de huidige pagina.
-  - <link> = metadata en externe bronnen koppelen (meestal in `<head>`).
+  - <link> = metadata en externe bronnen koppelen (meestal in `head`).
 
   - Een <a> wordt gebruikt voor het navigeren naar een andere pagina binnen de website.
-  - Het is visueel duidelijk dat een element een link is: de woorden in de <a> zijn kapitaal, dikgedrukt en het omvat zich in een kader in een andere kleur. Er is ook een hover aanwezig (dan wordt de <a> roze). 
+  - Het is visueel duidelijk dat een element een link is: de woorden in de 'a' zijn kapitaal, dikgedrukt en het omvat zich in een kader in een andere kleur. Er is ook een hover aanwezig (dan wordt de 'a' roze). 
   - Er wordt gebruik gemaakt van de :focus states, dit is 13 keer terug te vinden in de CSS van Milk Bar.
   - Er wordt geen gebruik gemaakt van een "skip link".
   - Aan het eind van de pagina wordt er gebruik gemaakt van social media posts, bij het drukken van deze elementen wordt een nieuwe tab geopend naar het social media profiel.
-  <img src="images/toegankelijkheidtest_1/controls_img1.png" width="375px" alt="Code van een link">
+  <img src="readme-images/toegankelijkheidtest_1/controls_img1.png" width="375px" alt="Code van een link">
 
   ##### Appearance
   - Er is geen gebruik gemaakt een dark mode.
@@ -142,11 +142,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Er is een hoog contrast, bij gebruik van de Chrome extensie Accessible Web, heeft de homepagina een score gekregen van 87 van de 100. De punten die werden getoond waren de volgende:    
   - Het is mogelijk om de website teksten te vergroten naar 200%.
 
-  <img src="images/toegankelijkheidtest_1/appearance_img1.png" width="375px" alt="Chrome extensie Accessible Web toont de resultaten van de homepagina">
-  <img src="images/toegankelijkheidtest_1/appearance_img2.png" width="375px" alt="Chrome extensie Accessible Web geeft aan dat de pijlen (buttons) geen alt tekst hebben">
-  <img src="images/toegankelijkheidtest_1/appearance_img3.png" width="375px" alt="Chrome extensie Accessible Web geeft aan dat het contrast in het social media element niet hoog genoeg is tussen de voorgrond en achtergrond">
-  <img src="images/toegankelijkheidtest_1/appearance_img4.png" width="375px" alt="Chrome extensie Accessible Web geeft aan dat het scrollende carrousel in de social media sectie niet gebruikt kan worden met het toetsenbord">
-  <img src="images/toegankelijkheidtest_1/appearance_img5.png" width="375px" alt="De tekst kan vergroot worden naar 200%">
+  <img src="readme-images/toegankelijkheidtest_1/appearance_img1.png" width="375px" alt="Chrome extensie Accessible Web toont de resultaten van de homepagina">
+  <img src="readme-images/toegankelijkheidtest_1/appearance_img2.png" width="375px" alt="Chrome extensie Accessible Web geeft aan dat de pijlen (buttons) geen alt tekst hebben">
+  <img src="readme-images/toegankelijkheidtest_1/appearance_img3.png" width="375px" alt="Chrome extensie Accessible Web geeft aan dat het contrast in het social media element niet hoog genoeg is tussen de voorgrond en achtergrond">
+  <img src="readme-images/toegankelijkheidtest_1/appearance_img4.png" width="375px" alt="Chrome extensie Accessible Web geeft aan dat het scrollende carrousel in de social media sectie niet gebruikt kan worden met het toetsenbord">
+  <img src="readme-images/toegankelijkheidtest_1/appearance_img5.png" width="375px" alt="De tekst kan vergroot worden naar 200%">
 
   ##### Animation
   - De animaties op de website zijn subtiel en niet te heftig.
@@ -170,10 +170,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="images/ontleden_home.jpg" width="375px" alt="breakdown van de hele homepagina">
+  <img src="readme-images/ontleden_home.jpg" width="375px" alt="breakdown van de hele homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="images/ontleden_product.jpg" width="375px" alt="breakdown van de productpagina">
+  <img src="readme-images/ontleden_product.jpg" width="375px" alt="breakdown van de productpagina">
 </details>
 
 
@@ -191,7 +191,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   Tyneisha
-  - Wat moet de volgorde zijn van mijn <ul>?
+  - Wat moet de volgorde zijn van mijn ul?
   - Wanneer moet ik aria-labels gebruiken?
   - Wat is de beste manier om mijn carrousels te ontwikkelen?
 
@@ -206,17 +206,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Code voor invis class.
 
   Sidney
-  - html sections?
-  - css carousel
+  - HTML sections?
+  - CSS carousel
 
   ### Verslag van meeting
-  - In de head had ik een nav gebruikt voor een scroll animatie waar het laatste nieuws en aanbiedingen worden getoond. De studentassistente had laten weten dat dit niet nodig was. Ik hoefde dit niet in de nav te plaatsen en kon het als <a> plaatsen in de code; 
+  - In de head had ik een nav gebruikt voor een scroll animatie waar het laatste nieuws en aanbiedingen worden getoond. De studentassistente had laten weten dat dit niet nodig was. Ik hoefde dit niet in de nav te plaatsen en kon het als 'a' plaatsen in de code; 
   - De sections kunnen laten worden gestijld door de h2 onder de img's te plaatsen;
   - Probeer z.s.m. de img's te plaatsen in je document en de alt tekst erin toe te voegen;
   - Sections moeten een heading bevatten.
 
-  <img src="images/voortgangsgesprekken/vg1_home1.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 1/2">
-  <img src="images/voortgangsgesprekken/vg1_home2.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 2/2">
+  <img src="readme-images/voortgangsgesprekken/vg1_home1.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 1/2">
+  <img src="readme-images/voortgangsgesprekken/vg1_home2.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 2/2">
 
 </details>
 
@@ -235,13 +235,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   Tyneisha
-  - X
+  - Hoe moet ik fonts in mijn CSS oproepen?
+  - Hoe kan ik ervoor zorgen dat ik de SVG's uit de originele website op mijn website kan plaatsen?
+  - Staan de sterren voor de reviews in de hero er goed in?
 
   Lam
   - X
 
   Roan
-  - X
+  - Mijn dunste font wordt niet goed opgeroepen en geeft een foutmelding aan
 
   Sidney
   - X
@@ -283,17 +285,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Tijdens de les ging het super goed. Het was voor mij een van de eerste keren dat ik goed snapte wat ik deed. Na de uitleg die ik kreeg over Grid, begreep ik het beter en kon ik aan het eind van de dag mijn homepagina afronden.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Tyneisha
+  - Hoe kan ik het logo in de nav centreren en de andere SVG's clusteren aan de zijkanten?
+  - Hoe kan ik mijn nav ontwikkelen door middel van Javascript?
+  - Kan ik de roze cursor uit de website toevoegen door middel van CSS of moet dit ook via Javascript?
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Lam
+  - X
+
+  Roan
+  - X
+
+  Sidney
+  - X
 
 
   ### Verslag van meeting
@@ -301,8 +309,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - punt 1
   - punt 2
-  - nog een punt
-  - ...
+  - punt 3
+  - punt 4
 
 </details>
 
@@ -344,7 +352,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. Toggle Switch (Product-pagina) - https://www.w3schools.com/howto/howto_css_switch.asp 
   2. bron 2
   3. ...
 

@@ -1,0 +1,169 @@
+/****************/
+/*    GENERAL   */
+/****************/
+
+
+
+
+/*********/
+/* FONTS */
+/*********/
+
+
+@font-face {
+    font-family: "Garnett";
+    src: url("../fonts/garnettRegular.woff2")format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Garnett";
+    src: url("../fonts/garnettSemibold.woff2")format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Garnett";
+    src: url("../fonts/garnettBold.woff2")format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Pitch";
+    src: url("../fonts/pitchBold.woff2")format("woff2");
+    font-weight: 700;
+}
+
+
+/********************************/
+/* HUIDIGE STIJLING VERWIJDEREN */
+/********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover, button:hover {
+    color: var(--color-primary);
+    /* text-decoration: underline; */
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+
+:root {
+	--color-text:#000000;
+	--color-background:#eeeeee;
+	--color-primary: #e83c85;
+	--color-secundary: #ffefdb;
+}
+
+
+
+
+/*********/
+/* TEKST */
+/*********/
+
+
+h1, h2, h3 {
+    font-family: "Garnett";
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: "Garnett";
+}
+
+a, button, link {
+    font-family: "Garnett";
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+ul {
+    font-family: "Garnett";
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/********************/
+/*  BUTTON STYLING  */
+/********************/
+button {
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    color: var(--color-secundary);
+    background-color: var(--color-text);
+    margin: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+/*********/
+/*  NAV  */
+/*********/
+
+
+nav:first-child {
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-text);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: var(--color-secundary);
+}
+
+nav a:first-child {
+	color: var(--color-secundary);
+}
+
+body nav:nth-of-type(2) ul {
+	font-family: "Garnett";
+	font-weight: 600;
+	font-size: small;
+	text-transform: uppercase;
+	display: flex;
+	justify-content:space-between;
+    margin: 1em;
+}
+
+body nav:nth-of-type(2) li img {
+	height: 100%;
+}
+
+/* body nav:nth-of-type(2) ul li, body nav:nth-of-type(2) ul li li {
+	display: flex;
+	justify-content:flex-start;
+} */
+ /* Hoe krijg ik het logo in het midden en groter? */

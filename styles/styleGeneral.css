@@ -162,8 +162,125 @@ body nav:nth-of-type(2) li img {
 	height: 100%;
 }
 
-/* body nav:nth-of-type(2) ul li, body nav:nth-of-type(2) ul li li {
-	display: flex;
-	justify-content:flex-start;
-} */
- /* Hoe krijg ik het logo in het midden en groter? */
+
+
+
+
+/************/
+/*  FOOTER  */
+/************/
+
+
+footer {
+	background-color: var(--color-text);
+	color: var(--color-secundary);
+
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+footer h2 {
+    font-weight: 600;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+footer form label {
+    font-family: "Garnett";
+    padding-top: 1em;
+    padding-bottom: .2em;
+}
+
+footer form input {
+    font-family: "Garnett";
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #211f20;
+    border-style: none;
+}
+
+footer form button {
+    background-color: var(--color-primary);
+    margin: 0;
+    margin-top: 1em;
+    border-radius: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer form button:hover {
+    color: var(--color-text);
+}
+
+
+footer img {
+	width: 25px;
+}
+
+footer > section > h2 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+}
+
+footer > section {
+    display: flex;
+    justify-content: start;
+}
+
+footer > section img {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 1.5em;
+}
+
+footer > nav:nth-of-type(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+footer > nav:nth-last-of-type(1) {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+footer > nav:nth-of-type(1) ul:nth-of-type(1) {
+    padding-right: 6em;
+}
+
+footer > nav:nth-of-type(1) ul li a {
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+footer > nav:nth-of-type(1) ul li {
+    padding-bottom: 2em;
+}
+
+
+footer > nav:nth-of-type(1) ul h3 {
+    padding-bottom: 2em;
+}
+
+
+footer > nav:nth-last-of-type(1) a {
+    font-family: "Garnett";
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--color-secundary);
+
+    margin-right: .7em;
+}

@@ -293,6 +293,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Hoe kan ik het logo in de nav centreren en de andere SVG's clusteren aan de zijkanten?
   - Hoe kan ik mijn nav ontwikkelen door middel van Javascript?
   - Kan ik de roze cursor uit de website toevoegen door middel van CSS of moet dit ook via Javascript?
+  - Hoe voeg ik een SVG toe aan mijn input field?
+  - Hoe krijg ik een sluisteken tussen mijn flexbox children in de footer nav?
+
 
   Lam
   - X

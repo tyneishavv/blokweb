@@ -134,7 +134,6 @@ button {
 /*  NAV  */
 /*********/
 
-
 nav:first-child {
 	display: flex;
 	justify-content: center;
@@ -142,12 +141,77 @@ nav:first-child {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	color: var(--color-secundary);
+
+    text-align: center;
 }
 
 nav a:first-child {
 	color: var(--color-secundary);
 }
 
+body nav:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 1em;
+}
+
+body nav:nth-of-type(2) {
+    border-bottom:1px solid #dadada;
+
+}
+
+header nav:nth-of-type(2) ul li:nth-of-type(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    justify-self: start;
+}
+
+header nav:nth-of-type(2) ul li:nth-of-type(2) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    
+    justify-self: end;
+    gap: 0.1fr;
+
+}
+
+header nav:nth-of-type(2) ul li:nth-of-type(3) img {
+    width: 130px;
+    height: 40px;
+	object-fit: cover;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    justify-self: center;
+}
+
+header nav:nth-of-type(2) ul li:nth-of-type(4) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    justify-self: start;
+}
+
+header nav:nth-of-type(2) ul li:nth-of-type(5) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    justify-self: center;
+}
+
+header nav:nth-of-type(2) ul li:nth-of-type(6) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    justify-self: end;
+}
+
+/* 
 body nav:nth-of-type(2) ul {
 	font-family: "Garnett";
 	font-weight: 600;
@@ -160,7 +224,59 @@ body nav:nth-of-type(2) ul {
 
 body nav:nth-of-type(2) li img {
 	height: 100%;
+} */
+
+
+
+
+
+/*********************/
+/*  OVERIGE STYLING  */
+/*********************/
+
+/* DERDE SECTIE VAN DE PAGINA HEEFT EEN ROZE SCROLLBAR */
+
+main > section:nth-of-type(3) ::-webkit-scrollbar {
+    width: 2px;
 }
+
+main > section:nth-of-type(3) ::-webkit-scrollbar-track {
+    background-color: #f8c3da;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 30px;
+
+}
+
+main > section:nth-of-type(3) ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 30px;
+}
+
+/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
+
+
+
+/* VIJFDE SECTIE VAN DE PAGINA HEEFT EEN ROZE SCROLLBAR */
+
+main > section:nth-of-type(5) ::-webkit-scrollbar {
+    width: 0.1em;
+}
+
+main > section:nth-of-type(5) ::-webkit-scrollbar-track {
+    background-color: #f8c3da;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 30px;
+
+}
+
+main > section:nth-of-type(5) ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 30px;
+}
+
+/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
 
 
 

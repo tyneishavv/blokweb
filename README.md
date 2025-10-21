@@ -298,22 +298,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   Lam
-  - X
+  - Bij de producten in mijn grid, zijn ze niet op 1 lijn, hoe kan ik dit oplossen?
 
   Roan
-  - X
+  - Hoe krijg ik de img kleiner want het is te groot in vergelijking met de andere img's in de carrousel?
 
   Sidney
-  - X
+  - Hoe maak ik een regenboog hover voor mijn button?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Na afloop de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - punt 3
-  - punt 4
+  - Maak je nav in grid, op die manier blijft het toegankelijk zonder dat je extra nav's gaat ontwikkelen om het 'mooi' te krijgen;
+  - Je cursor moet je aanpassen via Javascript, dit kan niet via CSS;
+  - Ga aan de slag met de tweede pagina;
+  - Bekijk het lesmateriaal van een paar weken geleden om te kijken hoe je een hamburger menu kan ontwikkelen;
+  - @ media only screen and min-width 800px gebruiken voor responsivess;
+  - Favicon nog toevoegen.
 
 </details>
 

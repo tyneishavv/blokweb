@@ -28,17 +28,18 @@
 
 
 
-/*****************/
-/* NAV MET IMG'S */
-/*****************/
+/******************************/
+/* INFORMATIE NAV ZWARTE BALK */
+/******************************/
 
 
 main section:nth-of-type(1) ul {
 	display: flex;
-	overflow-x: auto;
+	overflow-x: scroll;
 	padding-top: 3em;
 	padding-bottom: 3em;
 	padding-left: 1em;
+	padding-right: 1em;
 }
 
 main section:nth-of-type(1) ul li {
@@ -47,6 +48,7 @@ main section:nth-of-type(1) ul li {
 	justify-content: center;
 	align-items: center;
 	gap: 0.5em;
+	padding-right: 1.7em;
 }
 
 main section:nth-of-type(1) ul img {
@@ -98,6 +100,7 @@ main > section:nth-of-type(2) ul {
 	grid-column-start: 1;
 	grid-column-end: -1;
 	text-align: center;
+	justify-items: center;
 	
 	padding-left: 1em;
 	padding-right: 1em;
@@ -126,6 +129,37 @@ main section:nth-of-type(2) p:nth-of-type(2) {
 /* Rating cijfers onder de Hero images centreren op 1 lijn */
 
 
+
+
+
+
+/************************************/
+/*	HERO SECTION | RESPONSIVENESS	*/
+/************************************/
+
+/* 0 - 480px is voor smaller smartphones */
+/* 481 - 768px is voor tablets en larger smartphones */
+/* 769 - 1024px is voor laptops, grotere tablets in landscape en small desktop */
+/* 1280px is voor larger desktops en monitors */
+
+@media only screen and (max-width: 768px) {
+	main section:nth-of-type(2) > img {
+		height: 30em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	main section:nth-of-type(2) > img {
+		height: 30em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	main > section:nth-of-type(2) ul {
+		padding-left: 10em;
+		padding-right: 10em;
+	}
+}
 
 
 /************************************************************/
@@ -197,6 +231,7 @@ main > section:nth-of-type(3) > ul li p:nth-of-type(1) {
 	text-transform: uppercase;
 	color: var(--color-primary);
 }
+
 /* Justify-self geeft de richting aan van het horizontale element, align-self geeft de verticale richting aan van een element */
 
 
@@ -224,7 +259,54 @@ main > section:nth-of-type(3) img {
 	object-fit: cover;
 }
 
+/* OVERIGE STYLING EN EFFECTEN */
 
+main > section:nth-of-type(3) > ul li:nth-of-type(1) img:hover {
+	content: url(../images/homepage/homeSection3-1-hover.jpg);
+}
+
+main > section:nth-of-type(3) > ul li:nth-of-type(2) img:hover {
+	content: url(../images/homepage/homeSection3-2-hover.jpg)
+}
+
+main > section:nth-of-type(3) > ul li:nth-of-type(3) img:hover {
+	content: url(../images/homepage/homeSection3-3-hover.jpg)
+}
+
+main > section:nth-of-type(3) > ul li:nth-of-type(4) img:hover {
+	content: url(../images/homepage/homeSection3-4-hover.jpg)
+}
+
+main > section:nth-of-type(3) > ul li:nth-of-type(5) img:hover {
+	content: url(../images/homepage/homeSection3-5-hover.gif)
+}
+
+/* "How to Change Image on hover with CSS" https://www.geeksforgeeks.org/css/how-to-change-image-on-hover-with-css/ */
+
+
+
+/*******************************************************/
+/* "FROM OUR BAKERY TO YOUR DOORSTEP" | RESPONSIVENESS */
+/*******************************************************/
+
+@media only screen and (min-width: 1024px) {
+	main > section:nth-of-type(3) img  {
+		width: 30em;
+		height: 30em;
+	}
+	main > section:nth-of-type(3) > ul {
+		/* padding-top: 10em; */
+		padding-bottom: 15em;
+	}
+	main > section:nth-of-type(3) > ul li p {
+		padding-bottom: 5em;
+	}
+	main > section:nth-of-type(3) > ul li h3, main > section:nth-of-type(3) > ul li p:nth-of-type(2) {
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+}
 
 
 /*******************************************************/
@@ -285,6 +367,23 @@ main section:nth-of-type(4) a:hover {
     color: var(--color-primary);
 }
 
+/****************************************************************/
+/* "THE PERFECT DESSERTS FOR EVERY FALL PARTY" | RESPONSIVENESS */
+/****************************************************************/
+
+@media only screen and (min-width: 1024px) {
+	main section:nth-of-type(4) p {
+		padding-left: 8em;
+		padding-right: 8em;
+	}
+	main section:nth-of-type(4) a {
+		font-size: 20px;
+		margin-top: 1.5em;
+	}
+}
+
+
+
 
 /****************************************/
 /*  "GIFTS FOR EVERY OCCASION!" SECTION */
@@ -304,6 +403,10 @@ main section:nth-of-type(5) img {
 	object-fit: cover;
 }
 
+main section:nth-of-type(5) h3 {
+	text-align: center;
+}
+
 main section:nth-of-type(5) ul {
 	display: flex;
 	justify-content: flex-start;
@@ -312,6 +415,39 @@ main section:nth-of-type(5) ul {
 	overflow-x: scroll;
 	padding-bottom: 2em;
 }
+
+
+/*************************************************/
+/*  "GIFTS FOR EVERY OCCASION!" | RESPONSIVENESS */
+/*************************************************/
+
+@media only screen and (max-width: 768px) {
+	main section:nth-of-type(5) p {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	main section:nth-of-type(5) p {
+		padding-left: 20em;
+		padding-right: 20em;
+	}
+	main section:nth-of-type(5) img {
+		width: 30em;
+		height: 30em;
+	}
+	main section:nth-of-type(5) ul {
+		justify-content: space-evenly;
+		/* padding-left: 3em;
+		padding-right: 3em; */
+		overflow-x:hidden;
+	}
+}
+
+
+
+
 
 
 /***********************************/
@@ -372,6 +508,70 @@ main section:nth-of-type(6) h2 {
 	padding-left: 2em;
 	padding-right: 2em;
 }
+
+/********************************************/
+/*  "WHY CHOOSE MILK BAR?" | RESPONSIVENESS */
+/********************************************/
+
+@media only screen and (min-width: 1280px) {
+	main section:nth-of-type(6) {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+	}
+	main section:nth-of-type(6) h2 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		order: 1;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(1) {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		order: 2;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(2) {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		order: 3;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(3) {
+		grid-column-start: 3;
+		grid-column-end: 3;
+		order: 4;
+	}
+
+	main > section:nth-of-type(6) > section:nth-of-type(1) img {
+		order: 1;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(1) h3 {
+		order: 2;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(1) p {
+		order: 3;
+	}
+
+	main > section:nth-of-type(6) > section:nth-of-type(2) img {
+		order: 1;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(2) h3 {
+		order: 2;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(2) p {
+		order: 3;
+	}
+
+	main > section:nth-of-type(6) > section:nth-of-type(3) img {
+		order: 1;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(3) h3 {
+		order: 2;
+	}
+	main > section:nth-of-type(6) > section:nth-of-type(3) p {
+		order: 3;
+	}
+}
+
+
+
 
 /*******************************************************/
 /*  "SHAKING UP THE DESSERT GAME SINCE 2008" P ELEMENT */
@@ -444,6 +644,38 @@ main > section:nth-of-type(7) > a:hover {
     color: var(--color-primary);
 }
 
+
+/****************************************/
+/*  "SEND GROUP GIFTS" | RESPONSIVENESS */
+/****************************************/
+
+@media only screen and (min-width: 1280px) {
+	main > section:nth-of-type(7) {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1;
+	}
+	main > section:nth-of-type(7) > img {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+	}
+	main > section:nth-of-type(7) > h2 {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+	}
+	main > section:nth-of-type(7) > p {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+	}
+	main > section:nth-of-type(7) > a {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+	}
+}
 
 
 
@@ -591,4 +823,24 @@ main > section:nth-of-type(9) > p {
 	padding-bottom: 3em;
 	padding-left: 2em;
 	padding-right: 2em;
+}
+
+
+
+
+/********************************/
+/*  RESPONSIVENESS HOMEPAGINA	*/
+/********************************/
+
+/* https://www.browserstack.com/guide/responsive-design-breakpoints */
+
+/* 0 - 480px is voor smaller smartphones */
+/* 481 - 768px is voor tablets en larger smartphones */
+/* 769 - 1024px is voor laptops, grotere tablets in landscape en small desktop */
+/* 1280px is voor larger desktops en monitors */
+
+@media only screen and (min-width: 768px) {
+	body main section:first-child {
+		display: none;
+	}
 }

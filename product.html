@@ -16,42 +16,85 @@
 <body>
 	<header>
 		<nav>
-			<a href="#">The wait is over - Pumpkin coffee cake is back</a> 
+			<a href="index.html">The wait is over - Pumpkin coffee cake is back</a> 
 		</nav>
 		<nav>
 			<ul>
-				<li>Hamburger<a href="#"></a></li>
-				<li>Location<a href="#"></a></li>
-				<li><img src="" alt="Milk Bar logo"></li>
-				<li>Profile<a href="#"></a></li>				
-				<li>Search<a href="#"></a></li>
-				<li>Cart<a href="#"></a></li>
-
+				<li>
+					<button aria-label="Menu">
+					<svg aria-hidden="true" width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+					<title id="iconHamburgerTitle">Milk Bar Menu Icon</title>
+					<path d="M2.5 15H17.5" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M2.5 10H17.5" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M2.5 5H17.5" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+					</button>
+				</li>
+				<li><a href="#"><svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1065_199)">
+					<path d="M10.5 13.63C11.3726 13.6301 12.2094 13.2836 12.8265 12.6667C13.4436 12.0498 13.7904 11.213 13.7905 10.3405C13.7906 9.46793 13.4441 8.63105 12.8272 8.01396C12.2103 7.39687 11.3736 7.05012 10.501 7.04999C9.62844 7.04999 8.79161 7.39661 8.17462 8.01361C7.55762 8.6306 7.211 9.46743 7.211 10.34C7.211 11.2125 7.55762 12.0494 8.17462 12.6664C8.79161 13.2834 9.62844 13.63 10.501 13.63H10.5Z" stroke="black" stroke-miterlimit="10"></path>
+					<path d="M10.73 0.5C16.23 0.5 20.69 4.95 20.69 10.44C20.69 10.44 21.1 17.48 10.69 24.63H10.51C0.100023 17.48 0.500023 10.44 0.500023 10.44C0.500023 4.95 4.96002 0.5 10.46 0.5H10.73Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></g>
+					<defs>
+					<clipPath id="clip0_1065_199">
+					<rect width="22" height="26" fill="white"></rect>
+					</clipPath>
+					</defs></svg></a></li>
+				<li><img src="images/general/navLogo.svg" alt="Milk Bar logo"></li>
+				<li><a href="#"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="iconAccountTitle"><title id="iconAccountTitle">Milk Bar Account Icon</title>
+					<path d="M15 18.75C19.1421 18.75 22.5 15.3921 22.5 11.25C22.5 7.10786 19.1421 3.75 15 3.75C10.8579 3.75 7.5 7.10786 7.5 11.25C7.5 15.3921 10.8579 18.75 15 18.75Z" stroke="black" stroke-miterlimit="10"></path>
+					<path d="M3.63147 25.3114C4.78408 23.3164 6.44141 21.6598 8.43696 20.508C10.4325 19.3563 12.696 18.75 15.0001 18.75C17.3041 18.75 19.5676 19.3564 21.5632 20.5082C23.5587 21.6599 25.216 23.3166 26.3686 25.3116" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>				
+				<li><a href="#"></a><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="iconSearchNavTitle">
+					<title id="iconSearchNavTitle">Milk Bar Search Icon</title>
+					<path d="M13.5938 23.4375C19.0303 23.4375 23.4375 19.0303 23.4375 13.5938C23.4375 8.1572 19.0303 3.75 13.5938 3.75C8.1572 3.75 3.75 8.1572 3.75 13.5938C3.75 19.0303 8.1572 23.4375 13.5938 23.4375Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M20.554 20.5546L26.2493 26.2499" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg></li>
+				<li><a href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="iconCartTitle"><title id="iconCartTitle">Milk Bar Cart Icon</title>
+				<path d="M22.5 21.5625H8.02673C7.80718 21.5625 7.59459 21.4854 7.42603 21.3448C7.25747 21.2041 7.14363 21.0087 7.10435 20.7927L3.97519 3.5823C3.93592 3.36628 3.82207 3.17091 3.65351 3.03023C3.48495 2.88956 3.27236 2.8125 3.05281 2.8125H0.9375" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+				<path d="M8.4375 26.25C9.73192 26.25 10.7812 25.2007 10.7812 23.9062C10.7812 22.6118 9.73192 21.5625 8.4375 21.5625C7.14308 21.5625 6.09375 22.6118 6.09375 23.9062C6.09375 25.2007 7.14308 26.25 8.4375 26.25Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+				<path d="M22.5 26.25C23.7944 26.25 24.8438 25.2007 24.8438 23.9062C24.8438 22.6118 23.7944 21.5625 22.5 21.5625C21.2056 21.5625 20.1562 22.6118 20.1562 23.9062C20.1562 25.2007 21.2056 26.25 22.5 26.25Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+				<path d="M4.6875 7.5H25.1267C25.264 7.5 25.3996 7.53016 25.524 7.58836C25.6484 7.64656 25.7585 7.73137 25.8464 7.8368C25.9344 7.94222 25.9982 8.06569 26.0332 8.19847C26.0682 8.33125 26.0736 8.4701 26.0491 8.60521L24.515 17.0427C24.4757 17.2587 24.3619 17.4541 24.1933 17.5948C24.0247 17.7354 23.8121 17.8125 23.5926 17.8125H6.5625" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
 			</ul>	
-		</nav>
-		<nav>
-			<ul>
-				<li>Desserts<a href="#"></a></li>
-				<li>Birthday<a href="#"></a></li>
-				<li>Corporate Gifts<a href="#"></a></li>
-				<li>Bakeries<a href="#"></a></li>
-				<li>Grocery<a href="#"></a></li>
-				<li>More<a href="#"></a></li>
-				<li>Order ASAP Delivery<a href="#"></a></li>
-			</ul>
 		</nav>
 	</header>
 
     <main>
         <section>
             <h1>6" Birthday Cake</h1>
-            <img src="" alt="Three layer birthday cake with white icing and rainbow sprinkles">
-            <img src="" alt="Birthday cake from the other side">
-            <img src="" alt="Close up of the white icing of the cake">
-            <img src="" alt="Close up of the top of the cake">
-            <img src="" alt="One slice of the birthday cake">
-            <img src="" alt="Two birthday cakes together">
-            <p>★★★★☆ 13,204 Reviews</p>
+			<ul>
+				<li id="cake-1">
+					<img src="images/productpage/productSection1-1.jpeg" alt="Three layer birthday cake with white icing and rainbow sprinkles">
+				</li>
+				<li id="cake-2">
+					<img src="images/productpage/productSection1-2.jpeg" alt="Birthday cake from the other side">
+				</li>
+				<li id="cake-3">
+					<img src="images/productpage/productSection1-3.jpeg" alt="Close up of the white icing of the cake">
+				</li>
+				<li id="cake-4">
+					<img src="images/productpage/productSection1-4.jpeg" alt="Close up of the top of the cake">
+				</li>
+				<li id="cake-5">
+					<img src="images/productpage/productSection1-5.jpeg" alt="One slice of the birthday cake">
+				</li>
+				<li id="cake-6">
+					<img src="images/productpage/productSection1-6.jpeg" alt="Two birthday cakes together">
+				</li>
+				<li id="cake-7">
+					<img src="images/productpage/productSection1-7.jpeg" alt="Cake on cake platter">
+				</li>
+				<li id="cake-8">
+					<img src="images/productpage/productSection1-8.jpeg" alt="Cake in front of Milk Bar boxes">
+				</li>
+			</ul>
+			<nav>
+				<a href="#cake-1"><img src="images/productpage/productSection1-1.jpeg" alt=""></a>
+				<a href="#cake-2"><img src="images/productpage/productSection1-2.jpeg" alt=""></a>
+				<a href="#cake-3"><img src="images/productpage/productSection1-3.jpeg" alt="Close up of the white icing of the cake"></a>
+				<a href="#cake-4"><img src="images/productpage/productSection1-4.jpeg" alt="Close up of the top of the cake"></a>
+				<a href="#cake-5"><img src="images/productpage/productSection1-5.jpeg" alt="One slice of the birthday cake"></a>
+				<a href="#cake-6"><img src="images/productpage/productSection1-6.jpeg" alt="Two birthday cakes together"></a>
+				<a href="#cake-7"><img src="images/productpage/productSection1-7.jpeg" alt="Cake on cake platter"></a>
+				<a href="#cake-8"><img src="images/productpage/productSection1-8.jpeg" alt="Cake in front of Milk Bar boxes"></a>
+			</nav>
+			<p aria-label="4.5 stars from"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1E1E1E" viewBox="0 0 24 24"> <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1E1E1E" viewBox="0 0 24 24"> <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1E1E1E" viewBox="0 0 24 24"> <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1E1E1E" viewBox="0 0 24 24"> <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1E1E1E" viewBox="0 0 24 24"> <path d="M12 15.4V6.1l1.71 4.03 4.38.37-3.32 2.89.99 4.28M22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.45 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24Z"></path> </svg></p>
+            <p>13,204 Reviews</p>
 			<!-- svg van maken met alt, aria label -->
             <p>You’ve never tried a birthday cake like this. Our bestselling Birthday Cake, inspired by the boxed vanilla funfetti cake we loved as a kid, has grown up and gone gourmet. It has three tiers of heavenly rainbow-flecked vanilla birthday cake, layers of creamy frosting & crunchy crumbs, all topped with rainbow sprinkles.</p>
             <p>Serves groups of 6-12</p>
@@ -59,26 +102,25 @@
 
         <section>
             <h2>The benefits</h2>
-            <img src="" alt="Illustration of a birthday cake">
+            <img src="images/productpage/productSection2-1.svg" alt="Illustration of a birthday cake">
             <h3>Ships nationwide</h3>
 
-            <img src="" alt="Illustration of a taped up package">
+            <img src="images/productpage/productSection2-2.svg" alt="Illustration of a taped up package">
             <h3>Award Winning</h3>
 
-            <img src="" alt="Illustration of a chocolate chip cookie">
+            <img src="images/productpage/productSection2-3.png" alt="Illustration of a chocolate chip cookie">
             <h3>Baked Fresh</h3>
         </section>
 
         <section>
             <h2>Upgrade to a 10" party size $140</h2>
             <p>Serves groups of 20-30</p>
-			<img src="" alt="Confetti emoji">
+			<img src="images/productpage/productSection3-1.png" alt="Confetti emoji">
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
             </label>
             <!-- De code is van W3 Schools, de link: https://www.w3schools.com/howto/howto_css_switch.asp -->
-			 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1E1E1E" viewBox="0 0 24 24"> <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"></path> </svg>
         </section>
 
 		<button>Add to cart - $65</button>
@@ -90,6 +132,11 @@
 			<p>2-pack</p>
 			<p><strong>10% off</strong></p>
 			<p>3-pack</p>
+			<p><svg height="120" width="300" xmlns="http://www.w3.org/2000/svg">
+  			<g fill="none" stroke="grey" stroke-width="10">
+    		<path stroke-linecap="round" d="M10 50 l215 0" />
+  			</g>
+			</svg></p>
 		</section>
 		
 		<section>
@@ -174,35 +221,52 @@
     </main>
 
 	<footer>
-		<h2>Invite Milk Bar to your B'Day Party</h2>
-		<p>Tell us your birthday + receive a special treat with your birthday order :)</p>
-		<input type="email" name="email" placeholder="Your Email *">
-		<input type="date" name="date of birth">
-		<button>Submit</button>
+		<!-- Formulier voor het aanmelden voor de nieuwsbrief -->
+		<form>
+			<h2>Invite Milk Bar to your B'Day Party</h2>
+			<p>Tell us your birthday + receive a special treat with your birthday order :)</p>
+
+			<label for="email">Your E-mail *</label>
+			<input type="email" name="email" placeholder="e.g. name@example.com">
+
+			<label for="date">Date of birth</label>
+			<input type="date" name="date of birth">
+
+			<button>Submit</button>
+		</form>
+
 		<section>
 			<h2>Social media handles</h2>
-			<img src="" alt="X icon">
-			<img src="" alt="TikTok icon">
-			<img src="" alt="Facebook icon">
-			<img src="" alt="Instagram icon">
+			<img src="images/homepage/homeSection10-1.svg" alt="X icon">
+			<img src="images/homepage/homeSection10-2.svg" alt="TikTok icon">
+			<img src="images/homepage/homeSection10-3.svg" alt="Facebook icon">
+			<img src="images/homepage/homeSection10-4.svg" alt="Instagram icon">
 		</section>
+
 		<nav>
-			<h2>Sitemap</h2>
-			<h3>Learn</h3>
-			<a href="">About Milk Bar</a>
-			<a href="">FAQ</a>
-			<a href="">Contact Us</a>
-			<a href="">Careers</a>
-			<a href="">Press</a>
-			<a href="">What We Stand For</a>
-			<a href="">Party Tips</a>
-			<h3>Community</h3>
-			<a href="">Delivery</a>
-			<a href="">Grocery</a>
-			<a href="">Corporate Gifts</a>
-			<a href="">Online Course</a>
-			<a href="">Wholesale Signup</a>
+			<!-- ul maken (gedaan op 03/10/25 na feedbacksessie met de docent)-->
+			 <ul>
+				<h3>Learn</h3>
+				<li><a href="#">About Milk Bar</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">What We Stand For</a></li>
+				<li><a href="#">Party Tips</a></li>
+			</ul>
+			<ul>
+
+			<ul>
+				<h3>Community</h3>
+				<li><a href="#">Delivery</a></li>
+				<li><a href="#">Grocery</a></li>
+				<li><a href="#">Corporate Gifts</a></li>
+				<li><a href="#">Online Course</a></li>
+				<li><a href="#">Wholesale Signup</a></li>
+			</ul>
 		</nav>
+
 		<nav>
 			<a href="#">Terms of Service</a>
 			<a href="#">Privacy Policy</a>

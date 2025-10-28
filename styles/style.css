@@ -58,6 +58,23 @@ main section:nth-of-type(1) ul img {
 }
 
 
+/********************************/
+/*  RESPONSIVENESS HOMEPAGINA	*/
+/********************************/
+
+/* https://www.browserstack.com/guide/responsive-design-breakpoints */
+
+/* 0 - 480px is voor smaller smartphones */
+/* 481 - 768px is voor tablets en larger smartphones */
+/* 769 - 1024px is voor laptops, grotere tablets in landscape en small desktop */
+/* 1280px is voor larger desktops en monitors */
+
+@media only screen and (min-width: 768px) {
+	body main section:first-child {
+		display: none;
+	}
+}
+
 
 
 /********************************************************/
@@ -166,17 +183,45 @@ main section:nth-of-type(2) p:nth-of-type(2) {
 /*	"AWARD-WINNING DESSERTS FROM NYC'S #1 BAKERY" ELEMENT	*/
 /************************************************************/
 
-main > p:nth-of-type(1) {
+main > article {
+	background-color: var(--color-text);
+}
+/* Is het semantisch correcte code om hier een article omheen te plaatsen? */
+
+main > article > p:nth-of-type(1) {
 	font-family: "Pitch";
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
-	background-color: var(--color-text);
+	color: var(--color-secundary);
+
 	padding-top: 1em;
 	padding-bottom: 1em;
-	color: var(--color-secundary);
+	width: 100%;
+
+	/* Marquee instellingen, bron voor de marquee animatie 
+	https://htmleditor.w3schools.in/?filename=html_css_scrolling_text_using_css en
+	https://codepen.io/ohheckitsbeck/pen/ExYRadq?editors=1100*/
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+
+	transform: translateX(100%);
+	animation: scroll-marquee 12s linear infinite;
 }
 
+@keyframes scroll-marquee {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
 
 
 
@@ -259,6 +304,18 @@ main > section:nth-of-type(3) img {
 	object-fit: cover;
 }
 
+main > section:nth-of-type(3) > ul > li:nth-of-type(4) > p {
+	clip: rect(0 0 0 0);
+  	clip-path: inset(50%);
+  	height: 1px;
+  	overflow: hidden;
+  	position: absolute;
+  	white-space: nowrap;
+  	width: 1px;
+	/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+}
+
+
 /* OVERIGE STYLING EN EFFECTEN */
 
 main > section:nth-of-type(3) > ul li:nth-of-type(1) img:hover {
@@ -307,6 +364,11 @@ main > section:nth-of-type(3) > ul li:nth-of-type(5) img:hover {
 	padding-right: 50px;
 	}
 }
+
+
+
+
+
 
 
 /*******************************************************/
@@ -367,6 +429,8 @@ main section:nth-of-type(4) a:hover {
     color: var(--color-primary);
 }
 
+
+
 /****************************************************************/
 /* "THE PERFECT DESSERTS FOR EVERY FALL PARTY" | RESPONSIVENESS */
 /****************************************************************/
@@ -381,6 +445,9 @@ main section:nth-of-type(4) a:hover {
 		margin-top: 1.5em;
 	}
 }
+
+
+
 
 
 
@@ -417,6 +484,7 @@ main section:nth-of-type(5) ul {
 }
 
 
+
 /*************************************************/
 /*  "GIFTS FOR EVERY OCCASION!" | RESPONSIVENESS */
 /*************************************************/
@@ -434,16 +502,18 @@ main section:nth-of-type(5) ul {
 		padding-right: 20em;
 	}
 	main section:nth-of-type(5) img {
-		width: 30em;
-		height: 30em;
+		width: 25em;
+		height: 25em;
 	}
 	main section:nth-of-type(5) ul {
-		justify-content: space-evenly;
+		justify-content: center;
 		/* padding-left: 3em;
 		padding-right: 3em; */
-		overflow-x:hidden;
+		overflow-x: hidden;
 	}
 }
+
+
 
 
 
@@ -509,6 +579,8 @@ main section:nth-of-type(6) h2 {
 	padding-right: 2em;
 }
 
+
+
 /********************************************/
 /*  "WHY CHOOSE MILK BAR?" | RESPONSIVENESS */
 /********************************************/
@@ -517,6 +589,8 @@ main section:nth-of-type(6) h2 {
 	main section:nth-of-type(6) {
 		display: grid;
 		grid-template-columns: repeat(4, auto);
+		
+		padding-bottom: 2em;
 	}
 	main section:nth-of-type(6) h2 {
 		grid-column-start: 1;
@@ -577,16 +651,44 @@ main section:nth-of-type(6) h2 {
 /*  "SHAKING UP THE DESSERT GAME SINCE 2008" P ELEMENT */
 /*******************************************************/
 
-main > p:nth-of-type(2) {
-	display: flex;
-	justify-content: center;
+main > article:nth-of-type(2) {
 	background-color: var(--color-text);
-	padding-top: 1em;
-	padding-bottom: 1em;
-	color: var(--color-secundary);
+}
+/* Is het semantisch correcte code om hier een article omheen te plaatsen? */
 
+main > article > p:nth-of-type(2) {
 	font-family: "Pitch";
 	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	color: var(--color-secundary);
+
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 100%;
+
+	/* Marquee instellingen, bron voor de marquee animatie 
+	https://htmleditor.w3schools.in/?filename=html_css_scrolling_text_using_css en
+	https://codepen.io/ohheckitsbeck/pen/ExYRadq?editors=1100*/
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+
+	transform: translateX(100%);
+	animation: scroll-marquee 12s linear infinite;
+}
+
+@keyframes scroll-marquee {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 
@@ -653,27 +755,49 @@ main > section:nth-of-type(7) > a:hover {
 	main > section:nth-of-type(7) {
 		display: grid;
 		grid-template-columns: 50% 50%;
-		grid-template-rows: 1;
+		grid-template-rows: 200px 100px 200px;
+		margin: 0;
 	}
 	main > section:nth-of-type(7) > img {
 		grid-column-start: 1;
+
 		grid-column-end: 2;
 		grid-row-start: 1;
+		grid-row-end: -1;
 	}
 	main > section:nth-of-type(7) > h2 {
 		grid-column-start: 2;
 		grid-column-end: 3;
+
 		grid-row-start: 1;
+		grid-row-end: 1;
+
+		align-self: end;
+		justify-self: center;
 	}
+
 	main > section:nth-of-type(7) > p {
 		grid-column-start: 2;
 		grid-column-end: 3;
-		grid-row-start: 1;
+
+		grid-row-start: 2;
+		grid-row-end: 2;
+
+		align-self: center;
+		justify-self: center;
+
+		margin-left: 1em;
+		margin-right: 1em;
 	}
+
 	main > section:nth-of-type(7) > a {
 		grid-column-start: 2;
 		grid-column-end: 3;
-		grid-row-start: 1;
+
+		grid-row-start: 3;
+		grid-row-end: 3;
+		align-self: start;
+		justify-self: center;
 	}
 }
 
@@ -788,6 +912,44 @@ main > section:nth-of-type(8) > section h3 {
 }
 
 
+/******************************************/
+/*  "WORD ON THE STREET" | RESPONSIVENESS */
+/******************************************/
+
+@media only screen and (min-width: 1280px) {
+	main > section:nth-of-type(8) {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	main > section:nth-of-type(8) > h2 {
+		text-align: center;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		grid-column-start: 1;
+	}
+
+	main > section:nth-of-type(8) > section:nth-of-type(1) {
+		align-self: end;
+		justify-self: end;
+	}
+
+	main > section:nth-of-type(8) > section:nth-of-type(2) {
+		grid-column-start: 2;
+		grid-column-start: 2;
+		grid-row-start: 2;
+	}
+}
+
+
+
 
 /************************************/
 /*  "HEY NICE TO TREAT YOU" SECTION */
@@ -826,21 +988,41 @@ main > section:nth-of-type(9) > p {
 }
 
 
+/**********************************************/
+/*   "HEY NICE TO TREAT YOU" | RESPONSIVENESS */
+/**********************************************/
 
+@media only screen and (min-width: 1280px) {
+	main > section:nth-of-type(9) {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 300px 300px;
+		margin: 0;
+		margin-top: 10px;
+		padding-bottom: 0;
+	}
 
-/********************************/
-/*  RESPONSIVENESS HOMEPAGINA	*/
-/********************************/
+	main > section:nth-of-type(9) > img {
+		grid-column-start: 1;
+		grid-column-end: 2;
 
-/* https://www.browserstack.com/guide/responsive-design-breakpoints */
+		grid-row-start: 1;
+		grid-row-end: -1;
+	}
 
-/* 0 - 480px is voor smaller smartphones */
-/* 481 - 768px is voor tablets en larger smartphones */
-/* 769 - 1024px is voor laptops, grotere tablets in landscape en small desktop */
-/* 1280px is voor larger desktops en monitors */
+	main > section:nth-of-type(9) > h2 {
+		margin-left: 100px;
+		margin-right: 100px;
 
-@media only screen and (min-width: 768px) {
-	body main section:first-child {
-		display: none;
+		align-self: end;
+		justify-content: center;
+	}
+
+	main > section:nth-of-type(9) > p {
+		margin-left: 100px;
+		margin-right: 100px;
+
+		align-self: start;
+		justify-content: center;
 	}
 }

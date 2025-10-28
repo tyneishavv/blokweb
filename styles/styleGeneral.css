@@ -64,6 +64,7 @@ a:hover, button:hover {
 	--color-background:#eeeeee;
 	--color-primary: #e83c85;
 	--color-secundary: #ffefdb;
+    --color-borders: #e2e0d3;
 }
 
 
@@ -112,6 +113,7 @@ ul {
 /********************/
 /*  BUTTON STYLING  */
 /********************/
+
 button {
     appearance: none;
     cursor: pointer;
@@ -136,16 +138,16 @@ button {
 
 
 
-/*********/
-/*  NAV  */
-/*********/
+/****************/
+/*  EERSTE NAV  */
+/****************/
 
 nav:first-child {
 	display: flex;
 	justify-content: center;
 	background-color: var(--color-text);
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
 	color: var(--color-secundary);
 
     text-align: center;
@@ -162,6 +164,9 @@ nav a:first-child {
 /*  NAV BAR  */
 /*************/
 
+body header nav:nth-of-type(2) {
+    background-color: white;
+}
 
 body header nav:nth-of-type(2) ul li button {
     color: black;
@@ -175,7 +180,7 @@ body header nav:nth-of-type(2) ul li button {
 
 body nav:nth-of-type(2) ul {
     display: grid;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: 125px auto 125px;
     padding: 1em;
 
     height: 2em;
@@ -240,8 +245,68 @@ header nav:nth-of-type(2) ul li:nth-of-type(6) {
     justify-self: end;
 }
 
+header {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+	z-index: 2;
+}
+/* Dit zorgt ervoor dat mijn navs mee gaan op de pagina, dit heb ik geleerd door de volgende link: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 
 
+/************************/
+/*  RESPONSIVE | NAV	*/
+/************************/
+
+/* https://www.browserstack.com/guide/responsive-design-breakpoints */
+
+/* 0 - 480px is voor smaller smartphones */
+/* 481 - 768px is voor tablets en larger smartphones */
+/* 769 - 1024px is voor laptops, grotere tablets in landscape en small desktop */
+/* 1280px is voor larger desktops en monitors */
+
+@media only screen and (max-width: 768px) {
+    header nav:nth-of-type(2) ul li:nth-of-type(3) img {
+        width: 130px;
+        height: 35px;
+        object-fit: cover;
+        padding-left: 5px;
+        padding-right: 5px;
+
+
+        grid-row-start: 1;
+        grid-column-start: 2;
+
+        justify-self: center;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    header nav:nth-of-type(2) ul li:nth-of-type(2), 
+    header nav:nth-of-type(2) ul li:nth-of-type(4), 
+    header nav:nth-of-type(2) ul li:nth-of-type(5) {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    header nav:nth-of-type(2) ul li:nth-of-type(3) img {
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    * {
+        font-size: 20px;
+    }
+}
+
+/* Bron voor het verbergen van de nav iconen https://www.a11yproject.com/posts/how-to-hide-content/ */
 
 
 
@@ -433,42 +498,3 @@ footer > nav:nth-last-of-type(1) a {
 
     margin-right: .7em;
 }
-
-
-
-
-/********************************/
-/*  RESPONSIVENESS HOMEPAGINA	*/
-/********************************/
-
-/* https://www.browserstack.com/guide/responsive-design-breakpoints */
-
-/* 0 - 480px is voor smaller smartphones */
-/* 481 - 768px is voor tablets en larger smartphones */
-/* 769 - 1024px is voor laptops, grotere tablets in landscape en small desktop */
-/* 1280px is voor larger desktops en monitors */
-
-@media only screen and (max-width: 768px) {
-    header nav:nth-of-type(2) ul li:nth-of-type(3) img {
-    width: 130px;
-    height: 35px;
-	object-fit: cover;
-    padding-left: 5px;
-    padding-right: 5px;
-
-
-    grid-row-start: 1;
-    grid-column-start: 2;
-
-    justify-self: center;
-}
-}
-
-
-
-@media only screen and (min-width: 1280px) {
-    * {
-        font-size: 20px;
-    }
-}
-

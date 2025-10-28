@@ -1,3 +1,402 @@
 /***********************/
 /*    PRODUCT-PAGINA   */
 /***********************/
+
+main {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/*******************************/
+/*  6" BIRTHDAY CAKE SECTION   */
+/*******************************/
+
+body > main > section:nth-of-type(1) img {
+    border-radius: 10px;
+    width: 100%;
+
+    /* display: block; */
+    margin-top: 1em;
+}
+
+body > main > section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > section:nth-of-type(1) > ul {
+    display: flex;
+    overflow: hidden;
+    gap: min(2vw, 1.5em);
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+
+    order: 1;
+}
+
+body > main > section:nth-of-type(1) li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+body > main > section > nav {
+    display: flex;
+    gap: min(2vw, 1.5em);
+    scroll-snap-type: auto;
+    order: 2;
+}
+
+main > section > h1 {
+    order: 3;
+}
+
+main > section > p:nth-of-type(1) {
+    order: 4;
+}
+
+main > section > p:nth-of-type(2) {
+    order: 5;
+}
+
+main > section > p:nth-of-type(3) {
+    order: 6;
+}
+
+main > section > p:nth-of-type(4) {
+    order: 7;
+} 
+
+h1 {
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+
+/************************************************/
+/*  6" BIRTHDAY CAKE SECTION | RESPONSIVENESS   */
+/************************************************/
+
+@media only screen and (min-width: 1280px) { 
+    body > main > section:nth-of-type(1) {
+        flex-direction: row;
+    }
+
+    body > main > section:nth-of-type(1) ul {
+        order: 2;
+    }
+
+    body > main > section > nav {
+        flex-basis: min(14.4%, 8em);
+        flex-shrink: 0;
+
+        flex-direction: column;
+        order: 1;
+    }
+}
+
+
+
+
+
+/***************************/
+/*  THE BENEFITS SECTION   */
+/***************************/
+
+main > section:nth-of-type(2) h2 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+
+main > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: 1fr 1fr;
+
+    padding-top: 1em;
+}
+
+main > section:nth-of-type(2) > img:nth-of-type(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    align-self: center;
+    justify-self: center;
+}
+
+main > section:nth-of-type(2) > h3:nth-of-type(1) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    align-self: center;
+    justify-self: center;
+
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+main > section:nth-of-type(2) > img:nth-of-type(2) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    align-self: center;
+    justify-self: center;
+}
+
+main > section:nth-of-type(2) > h3:nth-of-type(2) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    align-self: center;
+    justify-self: center;
+
+    text-transform: capitalize;
+    font-weight: 300;
+
+}
+
+main > section:nth-of-type(2) > img:nth-of-type(3) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    align-self: center;
+    justify-self: center;
+}
+
+main > section:nth-of-type(2) > h3:nth-of-type(3) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+
+    align-self: center;
+    justify-self: center;
+
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+main > section:nth-of-type(2) img {
+    width: 50px;
+}
+
+
+
+
+
+
+/*************************************************/
+/*  "UPGRADE TO A 10" PARTY SIZE $140" SECTION   */
+/*************************************************/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--color-primary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-primary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*  Bron voor het ontwikkelen van een toggle https://www.w3schools.com/howto/howto_css_switch.asp */
+
+
+main > section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-borders);
+
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+
+    column-gap: 1em;
+}
+
+main > section:nth-of-type(3) h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+
+    align-self: start;
+    justify-self: start;
+
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+main > section:nth-of-type(3) > p {
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    align-self: end;
+    justify-self: start;
+}
+
+main > section:nth-of-type(3) > img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    width: 25px;
+
+    align-self: center;
+    justify-self: start;
+}
+
+main > section:nth-of-type(3) > label {
+    grid-column-start: 3;
+    grid-row-start: 1;
+
+    align-self: end;
+    justify-items: end;
+}
+
+main > button:first-of-type {
+    margin-left: 0;
+    margin-right: 0;
+
+    width: 100%;
+}
+
+
+
+
+/***********************************************/
+/*  "BUNDLE AND SAVE UP TO 10% OFF!" SECTION   */
+/***********************************************/
+
+main > section:nth-of-type(4) > h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: medium;
+
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    grid-row-start: 1;
+}
+
+main > section:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+main > section:nth-of-type(4) > p:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    grid-row-start: 2;
+}
+
+main > section:nth-of-type(4) > p:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    grid-row-start: 3;
+
+    align-self: center;
+    justify-self: center;
+}
+
+main > section:nth-of-type(4) > p:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    grid-row-start: 5;
+
+    align-self: center;
+    justify-self: center;
+}
+
+main > section:nth-of-type(4) > p:nth-of-type(4) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+
+    align-self: center;
+    justify-self: end;
+}
+
+main > section:nth-of-type(4) > p:nth-of-type(5) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+
+    grid-row-start: 5;
+
+    align-self: center;
+    justify-self: end;
+}
+
+main > section:nth-of-type(4) > p:nth-of-type(6) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 4;
+
+    align-self: center;
+    justify-self: start;
+}

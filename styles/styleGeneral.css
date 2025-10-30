@@ -18,6 +18,12 @@
 
 @font-face {
     font-family: "Garnett";
+    src: url("../fonts/garnettMedium.woff2")format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Garnett";
     src: url("../fonts/garnettSemibold.woff2")format("woff2");
     font-weight: 600;
 }
@@ -65,6 +71,10 @@ a:hover, button:hover {
 	--color-primary: #e83c85;
 	--color-secundary: #ffefdb;
     --color-borders: #e2e0d3;
+
+    --color-light-lines: #f2f2f2;
+    --color-light-pink: #f8c3da;
+    --color-light-grey: #f6f6ee;
 }
 
 
@@ -328,56 +338,6 @@ body header nav:nth-of-type(3) ul.yay {
 
 
 
-/*********************/
-/*  OVERIGE STYLING  */
-/*********************/
-
-/* DERDE SECTIE VAN DE PAGINA HEEFT EEN ROZE SCROLLBAR */
-
-main > section:nth-of-type(3) ::-webkit-scrollbar {
-    width: 2px;
-}
-
-main > section:nth-of-type(3) ::-webkit-scrollbar-track {
-    background-color: #f8c3da;
-    margin-left: 1em;
-    margin-right: 1em;
-    border-radius: 30px;
-
-}
-
-main > section:nth-of-type(3) ::-webkit-scrollbar-thumb {
-    background-color: var(--color-primary);
-    border-radius: 30px;
-}
-
-/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
-
-
-
-/* VIJFDE SECTIE VAN DE PAGINA HEEFT EEN ROZE SCROLLBAR */
-
-main > section:nth-of-type(5) ::-webkit-scrollbar {
-    width: 0.1em;
-}
-
-main > section:nth-of-type(5) ::-webkit-scrollbar-track {
-    background-color: #f8c3da;
-    margin-left: 1em;
-    margin-right: 1em;
-    border-radius: 30px;
-
-}
-
-main > section:nth-of-type(5) ::-webkit-scrollbar-thumb {
-    background-color: var(--color-primary);
-    border-radius: 30px;
-}
-
-/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
-
-
-
 
 
 /************/
@@ -414,6 +374,7 @@ footer form input {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #211f20;
+    color: var(--color-borders);
     border-style: none;
 }
 

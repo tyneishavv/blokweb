@@ -72,6 +72,7 @@ main section:nth-of-type(1) ul img {
 @media only screen and (min-width: 768px) {
 	body main section:first-child {
 		display: none;
+		/* Op deze manier wordt het element ook niet opgepakt door de screenreader (toegankelijkheidsboom). Dat is hier de bedoeling! */
 	}
 }
 
@@ -304,7 +305,7 @@ main > section:nth-of-type(3) img {
 	object-fit: cover;
 }
 
-main > section:nth-of-type(3) > ul > li:nth-of-type(4) > p {
+main > section:nth-of-type(3) > ul > li:nth-of-type(4) > p:first-of-type {
 	clip: rect(0 0 0 0);
   	clip-path: inset(50%);
   	height: 1px;
@@ -341,6 +342,49 @@ main > section:nth-of-type(3) > ul li:nth-of-type(5) img:hover {
 /* "How to Change Image on hover with CSS" https://www.geeksforgeeks.org/css/how-to-change-image-on-hover-with-css/ */
 
 
+/* DERDE SECTIE VAN DE PAGINA HEEFT EEN ROZE SCROLLBAR */
+
+main > section:nth-of-type(3) ::-webkit-scrollbar {
+    width: 2px;
+}
+
+main > section:nth-of-type(3) ::-webkit-scrollbar-track {
+    background-color: #f8c3da;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 30px;
+
+}
+
+main > section:nth-of-type(3) ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 30px;
+}
+
+/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
+
+
+
+/* VIJFDE SECTIE VAN DE PAGINA HEEFT EEN ROZE SCROLLBAR */
+
+main > section:nth-of-type(5) ::-webkit-scrollbar {
+    width: 0.1em;
+}
+
+main > section:nth-of-type(5) ::-webkit-scrollbar-track {
+    background-color: #f8c3da;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 30px;
+
+}
+
+main > section:nth-of-type(5) ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 30px;
+}
+
+/* https://www.youtube.com/watch?v=lvKK2fs6h4I */
 
 /*******************************************************/
 /* "FROM OUR BAKERY TO YOUR DOORSTEP" | RESPONSIVENESS */

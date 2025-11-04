@@ -2,10 +2,21 @@
 /*    PRODUCT-PAGINA   */
 /***********************/
 
- main {
+main {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+@media (prefers-color-scheme: dark) {
+    main > section:nth-of-type(3) img {
+        filter: invert(1);
+    }
+}
+
+
+
+
+
 
 
 
@@ -14,7 +25,6 @@
 /*******************************/
 /*  6" BIRTHDAY CAKE SECTION   */
 /*******************************/
-
 
 body > main > section:nth-of-type(1) img {
     border-radius: 10px;
@@ -53,8 +63,13 @@ body > main > section > nav {
 }
 
 main > section > h1 {
-    display: none;
-    /* Ik weet nog niet of dit verstandig is */
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 h1 {
@@ -68,17 +83,18 @@ main > section:nth-of-type(2) > h2 {
     padding-top: 10px;
 }
 
+
+
+
+
 /************************************************/
 /*  6" BIRTHDAY CAKE SECTION | RESPONSIVENESS   */
 /************************************************/
 
-/* DIT STAAT IN CRAFT, IK HEB HIER NOG GEEN OPLOSSING VOOR */
-
-
 @media only screen and (min-width: 768px) {
     body > main > section:nth-of-type(1) {
         display: grid;
-        grid-template-columns: 6vw 40vw;
+        grid-template-columns: 3vw 40vw;
         grid-template-rows: 1fr;
         column-gap: 1em;
 
@@ -87,7 +103,6 @@ main > section:nth-of-type(2) > h2 {
     }
 
     body > main > section > nav {
-        /* flex-basis: min(9.4%, 1em); */
         flex-shrink: 0;
 
         flex-direction: column;
@@ -100,6 +115,8 @@ main > section:nth-of-type(2) > h2 {
 
     body > main > section > nav img {
         padding: 0;
+        margin: 0;
+        /* width: 50px; */
     }
 
     body > main {
@@ -126,23 +143,14 @@ main > section:nth-of-type(2) > h2 {
 
 
 
-/************************************/
-/*  "PRODUCT INFORMATION" SECTION   */
-/************************************/
-
-
-/* main > section:nth-of-type(2) {
-
-} */
 
 
 
 
 
-/***************************/
-/*  THE BENEFITS SECTION   */
-/***************************/
-
+/*****************************/
+/*  "THE BENEFITS" SECTION   */
+/*****************************/
 
 main > section:nth-of-type(3) h2 {
     clip: rect(0 0 0 0);
@@ -236,28 +244,28 @@ main > section:nth-of-type(3) img {
 
 
 
+
+
+
+
 /*************************************************/
 /*  "UPGRADE TO A 10" PARTY SIZE $140" SECTION   */
 /*************************************************/
 
-/* body > main > section:nth-of-type(3) {
-    margin-right: 1em;
-} */
-
-.switch {
+main > section:nth-of-type(4) > label {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
 }
 
-.switch input {
+main > section:nth-of-type(4) > label input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.slider {
+main > section:nth-of-type(4) > label i {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -269,37 +277,21 @@ main > section:nth-of-type(3) img {
   transition: .4s;
 }
 
-.slider:before {
+main > section:nth-of-type(4) > label i:before {
   position: absolute;
   content: "";
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background-color: var(--color-white);
 }
 
-input:checked + .slider {
-  background-color: var(--color-primary);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--color-primary);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-.slider.round {
+main > section:nth-of-type(4) > label > i {
   border-radius: 34px;
 }
 
-.slider.round:before {
+main > section:nth-of-type(4) > label > i:before {
   border-radius: 50%;
 }
 /*  Bron voor het ontwikkelen van een toggle https://www.w3schools.com/howto/howto_css_switch.asp */
@@ -366,7 +358,10 @@ main > section:nth-of-type(4) > label {
 main > button:first-of-type {
     margin-left: 0;
     width: 100%;
+    background-color: var(--color-button-bg);
 }
+
+
 
 
 
@@ -378,7 +373,6 @@ main > button:first-of-type {
 /***********************************************/
 /*  "BUNDLE AND SAVE UP TO 10% OFF!" SECTION   */
 /***********************************************/
-
 
 main > section:nth-of-type(5) {
     display: grid;
@@ -467,6 +461,7 @@ main > section:nth-of-type(5) > p:nth-of-type(6) {
     background: linear-gradient(to right, var(--color-primary) 25%, var(--color-light-lines) 25%);
     /* https://www.w3schools.com/css/css3_gradients.asp */
 }
+
 
 
 
@@ -575,6 +570,9 @@ main > section:nth-of-type(6) > ul li button {
 
 
 
+
+
+
 /******************************************/
 /*  "PRODUCT & STORAGE DETAILS" SECTION   */
 /******************************************/
@@ -630,6 +628,9 @@ main > section:nth-of-type(7) svg:last-of-type {
 
     align-self: center;
 }
+
+
+
 
 
 
@@ -726,6 +727,9 @@ main > section:nth-of-type(8) p {
 
 
 
+
+
+
 /**********************************/
 /*  "BEHIND THE SCENES" SECTION   */
 /**********************************/
@@ -793,6 +797,9 @@ main > section:nth-of-type(9) > ul li svg {
     justify-self: center;
     align-self: center;
 }
+
+
+
 
 
 

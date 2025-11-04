@@ -119,11 +119,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ##### Controls
   De betekenis van de selectors:
 
-  - <a> = navigeren naar een andere pagina, sectie, bestand of extern adres.
-  - <button> = een actie uitvoeren binnen de huidige pagina.
-  - <link> = metadata en externe bronnen koppelen (meestal in `head`).
+  - a = navigeren naar een andere pagina, sectie, bestand of extern adres.
+  - button = een actie uitvoeren binnen de huidige pagina.
+  - link = metadata en externe bronnen koppelen (meestal in `head`).
 
-  - Een <a> wordt gebruikt voor het navigeren naar een andere pagina binnen de website.
+  - Een a wordt gebruikt voor het navigeren naar een andere pagina binnen de website.
   - Het is visueel duidelijk dat een element een link is: de woorden in de 'a' zijn kapitaal, dikgedrukt en het omvat zich in een kader in een andere kleur. Er is ook een hover aanwezig (dan wordt de 'a' roze). 
   - Er wordt gebruik gemaakt van de :focus states, dit is 13 keer terug te vinden in de CSS van Milk Bar.
   - Er wordt geen gebruik gemaakt van een "skip link".
@@ -254,10 +254,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Ik had geen .. gedaan bij het oproepen van mijn fonts, ook wist ik niet dat ik aanhalingstekens moest toevoegen om een font op te roepen.
+  - Ik wist niet dat ik SVG codes uit de website kon halen. Dit is mij nu gelukt door te kijken in de code van mijn gekozen website en de SVG te kopiëren als HTML-element.
+  - Ik kan de sterren niet toevoegen als HTML icoontjes, maar ik moet ze oproepen door middel van de SVG's die ook in de originele website staan. Deze SVG's kan ik dan plaatsen in mijn P.
 
 </details>
 
@@ -333,13 +332,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  - Ik merkte dat het mij beter af ging dan gedacht. Zo vond ik het super handig om mijn kleuren op te slaan in mijn root en deze op te roepen in mijn code, in plaats van losse HEX-codes te zoeken over mijn hele code-bestand.
+  - Ik heb geleerd hoe ik een responsive webpagina kan ontwikkelen! Ik had geen idee hoe dit moest en zag dit voor het eerst bij een medestudent tijdens de feedbacksessies met de studentassistente. Dit is hoe ik leerde om mijn webpagina's responsive te maken. Toen vond ik het een stuk minder eng om zelf te proberen.
+  - Ik heb vooral veel geleerd over grid. Ik had niet verwacht dat ik dit zo een handige tool zou vinden om mijn secties te stijlen. Dit heeft mij enorm geholpen bij het ontwikkelen van mijn webpagina's en ik kreeg het na een paar keer oefenen steeds meer onder de knie. Mijn voorkeur gaat nu ook meer naar grid dan naar flexbox.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Ik vond het lastig om de slideshow te maken in mijn tweede pagina (de productpagina), ik wist niet hoe ik de nav (de kleine afbeeldingen) kleiner kon maken zodat het dezelfde hoogte zou hebben als de uitgelichte foto. 
+  - Ik vond het lastig om mijn tweede pagina responsive te maken, maar dit was mij uiteindelijk gelukt door de hele main in een grid te plaatsen.
+  - Ik heb moeite gehad bij het ontwikkelen van mijn hamburgermenu. Het is mij niet gelukt om de homepagina te dimmen wanneer het hamburgermenu te zien is. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -357,8 +360,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. Toggle Switch (Product-pagina) - https://www.w3schools.com/howto/howto_css_switch.asp 
-  2. bron 2
-  3. ...
+  Homepagina
+  1. Responsiveness breakpoints uitleg - https://www.browserstack.com/guide/responsive-design-breakpoints 
+  2. Marquee instellingen voor mijn spinnende p in mijn homepagina - https://htmleditor.w3schools.in/?filename=html_css_scrolling_text_using_css en https://codepen.io/ohheckitsbeck/pen/ExYRadq?editors=1100
+  3. Box-shadow voor mijn carrousel van producten - https://milkbarstore.com
+  4. Het verbergen van content op de webpagina maar het wel benoemen in de screenreader - https://www.a11yproject.com/posts/how-to-hide-content/ 
+  5. Afbeelding veranderen in hover in CSS - https://www.geeksforgeeks.org/css/how-to-change-image-on-hover-with-css/
+  6. Custom scrollbar ontwikkelen - https://www.youtube.com/watch?v=lvKK2fs6h4I
+  7. Leren omgaan met Flexbox - https://www.w3schools.com/css/css3_flexbox_responsive.asp en https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  8. Border instellingen - https://www.w3schools.com/cssref/pr_border-width.php en https://www.w3schools.com/css/css_border_color.asp
 
+  Productpagina
+  1. Het verbergen van content op de webpagina maar het wel benoemen in de screenreader - https://www.a11yproject.com/posts/how-to-hide-content/ 
+  2. Toggle Switch - https://www.w3schools.com/howto/howto_css_switch.asp 
+  3. Een linear gradient maken voor mijn kortingscode bar - https://www.w3schools.com/css/css3_gradients.asp
+  4. Margin op -1 zetten zodat ik geen spacing meer heb aan de rechterkant - https://stackoverflow.com/questions/11495200/how-do-negative-margins-in-css-work-and-why-is-margin-top-5-margin-bottom5 
+
+  General
+  1. Mijn navigatie sticky maken op de webpagina - https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+  2. Het verbergen van content op de webpagina maar het wel benoemen in de screenreader - https://www.a11yproject.com/posts/how-to-hide-content/ 
+  3. Hamburgermenu ontwikkelen met HTML, CSS en Javascript - https://codepen.io/shooft/pen/myepoJo?editors=1100
+  4. Gebruik maken van de verschillende states - https://zellwk.com/blog/style-hover-focus-active-states/
+  
 </details>

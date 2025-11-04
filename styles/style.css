@@ -93,7 +93,7 @@ main section:nth-of-type(2) > img {
 
 main > section:nth-of-type(2) {
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 3fr 3fr;
 	grid-template-rows: max-content max-content;
 	gap: .1em;
 	row-gap: 1em;
@@ -251,7 +251,7 @@ main > section:nth-of-type(3) > ul {
 
 
 main > section:nth-of-type(3) > ul li {
-	display:grid;
+	display: grid;
 	grid-template-rows: repeat(3, auto);
 }
 /* Grid aanzetten en de rows aangeven van de carrousel card */
@@ -520,7 +520,7 @@ main section:nth-of-type(5) h3 {
 
 main section:nth-of-type(5) ul {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	gap: 1em;
 	padding: 1em;
 	overflow-x: scroll;
@@ -533,34 +533,7 @@ main section:nth-of-type(5) ul {
 /*  "GIFTS FOR EVERY OCCASION!" | RESPONSIVENESS */
 /*************************************************/
 
-@media only screen and (max-width: 768px) {
-	main section:nth-of-type(5) p {
-		padding-left: 4em;
-		padding-right: 4em;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	main section:nth-of-type(5) p {
-		padding-left: 20em;
-		padding-right: 20em;
-	}
-	main section:nth-of-type(5) img {
-		width: 25em;
-		height: 25em;
-	}
-	main section:nth-of-type(5) ul {
-		justify-content: center;
-		/* padding-left: 3em;
-		padding-right: 3em; */
-		overflow-x: hidden;
-	}
-}
-
-
-
-
-
+/* SCROLLBAR MOET VERWIJDERD WORDEN ALS HET SCHERM GROTER DAN 768PX WORDT */
 
 
 

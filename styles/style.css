@@ -1075,6 +1075,7 @@ main > section:nth-of-type(9) > h2 {
 	order: 2;
 
 	text-align: center;
+	color: #000000;
 }
 
 main > section:nth-of-type(9) > p {
@@ -1083,6 +1084,7 @@ main > section:nth-of-type(9) > p {
 	padding-bottom: 3em;
 	padding-left: 2em;
 	padding-right: 2em;
+	color: #000000;
 }
 
 

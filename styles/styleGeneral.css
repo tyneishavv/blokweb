@@ -86,7 +86,7 @@ a:hover, button:hover {
 :root {
     /* Primaire branding kleuren */
 	--color-text:#000000;
-	--color-background:#eeeeee;
+	--color-background:#ffffff;
 	--color-primary: #e83c85;
 	--color-secundary: #ffefdb;
     --color-borders: #e2e0d3;
@@ -474,36 +474,38 @@ header > nav:nth-of-type(3).toonMenu {
     translate:0% 0%;
 }
 
-header > nav:nth-of-type(3) > ul > li {
+header > nav:nth-of-type(3) > ul > li a {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 15px;
 
-    padding-top: .1rem;
-    padding-bottom: .1rem;
-
-    cursor: pointer;
+    color: var(--color-text);
 }
 
-header > nav:nth-of-type(3) > ul > li a:focus {
+header > nav:nth-of-type(3) > ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+header > nav:nth-of-type(3) > ul li a:focus {
     outline: var(--color-primary);
     outline-width: 2px;
     outline-style: dotted;
     outline-color: var(--color-primary);
 }
 
-header > nav:nth-of-type(3) > ul > hr {
+header > nav:nth-of-type(3) hr {
     width: 5vw;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-header > nav:nth-of-type(3) > ul > li:nth-of-type(7) {
+header > nav:nth-of-type(3) > ul:last-of-type > li:nth-of-type(1) a {
     color: var(--color-primary);
 }
 
 
-header > nav:nth-of-type(3) > ul li:hover {
+header > nav:nth-of-type(3) > ul li a:hover {
     color: var(--color-primary);
 }
 /* Dit is mij gelukt door een voorbeeld van Sanne 't Hooft 
@@ -517,11 +519,17 @@ https://codepen.io/shooft/pen/myepoJo?editors=1100 */
 /*  JS NAV HAMBURGERMENU | RESPONSIVENESS  */
 /*******************************************/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     header > nav:nth-of-type(3) {
-        width: 50vw;
+        width: 40vw;
+    }
+    header > nav:nth-of-type(3) > ul > li {
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
+
+
 
 
 
@@ -612,37 +620,33 @@ footer > section img {
 }
 
 footer > nav:nth-of-type(1) {
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
+    display: grid;
+    grid-template-rows: .5fr .5fr;
+    grid-template-columns: auto auto;
 }
 
-footer > nav:nth-last-of-type(1) {
-    display: flex;
-    flex-direction: row;
-
-    padding-top: 4em;
-    padding-bottom: 3em;
+footer > nav:nth-of-type(1) h3:first-of-type {
+    grid-column-start: 1;
 }
 
-footer > nav:nth-of-type(1) ul:nth-of-type(1) {
-    padding-right: 6em;
+footer > nav:nth-of-type(1) h3:last-of-type {
+    grid-column-start: 2;
+}
+
+footer > nav:nth-of-type(1) ul:first-of-type {
+    grid-row-start: 2;
+    grid-column-start: 1;
 }
 
 footer > nav:nth-of-type(1) ul li a {
-    font-weight: 400;
     text-transform: capitalize;
+    font-weight: 400;
 }
 
 footer > nav:nth-of-type(1) ul li {
-    padding-bottom: 2em;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-
-
-footer > nav:nth-of-type(1) ul h3 {
-    padding-bottom: 2em;
-}
-
 
 footer > nav:nth-last-of-type(1) a {
     font-family: "Garnett";
@@ -651,4 +655,9 @@ footer > nav:nth-last-of-type(1) a {
     color: var(--color-secundary);
 
     margin-right: .7em;
+}
+
+footer > nav:nth-last-of-type(1) {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }

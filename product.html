@@ -56,26 +56,29 @@
 		</nav>
 		<nav>
 			<ul>
-				<li><button aria-hidden="true" href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" style="max-width:18px;max-height:18px;">
+				<li><button aria-label="Close menu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" style="max-width:18px;max-height:18px;">
 					<path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18.75 5.25-13.5 13.5m13.5 0L5.25 5.25"></path></svg></button></li>
-				<li>Order ASAP Delivery<a href="#"></a></li>
-				<li>Shop All<a href="#"></a></li>
-				<li>Birthday<a href="#"></a></li>
-				<li>Bakeries<a href="#"></a></li>
-				<li>Grocery<a href="#"></a></li>
-				<hr>
-				<li>More Milk Bar<a href="#"></a></li>
-				<li>About Us<a href="#"></a></li>
-				<li>What We Stand For<a href="#"></a></li>
-				<li>Corporate Gifting<a href="#"></a></li>
-				<li>Weddings<a href="#"></a></li>
-				<li>How We Ship<a href="#"></a></li>
-				<li>In Person Classes<a href="#"></a></li>
-				<li>Bake Club<a href="#"></a></li>
-				<li>Online Baking Class<a href="#"></a></li>
-				<li>Recipes<a href="#"></a></li>
-				<li>Contact Us<a href="#"></a></li>
-				<li>FAQ<a href="#"></a></li>
+					<!-- href is verwijderd in de button want dit is alleen voor a'tjes (05-11-25) -->
+				<li><a href="#">Order ASAP Delivery</a></li>
+				<li><a href="#">Shop All</a></li>
+				<li><a href="product.html">Birthday</a></li>
+				<li><a href="#">Bakeries</a></li>
+				<li><a href="#">Grocery</a></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><a href="#">More Milk Bar</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">What We Stand For</a></li>
+				<li><a href="#">Corporate Gifting</a></li>
+				<li><a href="#">Weddings</a></li>
+				<li><a href="#">How We Ship</a></li>
+				<li><a href="#">In Person Classes</a></li>
+				<li><a href="#">Bake Club</a></li>
+				<li><a href="#">Online Baking Class</a></li>
+				<li><a href="#">Recipes</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">FAQ</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -329,10 +332,10 @@
 			<p>Tell us your birthday + receive a special treat with your birthday order :)</p>
 
 			<label for="email">Your E-mail *</label>
-			<input type="email" name="email" placeholder="e.g. name@example.com">
+			<input type="email" id="email" name="email" placeholder="e.g. name@example.com">
 
 			<label for="date">Date of birth</label>
-			<input type="date" name="date of birth">
+			<input type="date" id="date" name="date of birth">
 
 			<button>Submit</button>
 		</form>
@@ -347,8 +350,8 @@
 
 		<nav>
 			<!-- ul maken (gedaan op 03/10/25 na feedbacksessie met de docent)-->
-			 <ul>
-				<h3>Learn</h3>
+			<h3>Learn</h3>
+			<ul>
 				<li><a href="#">About Milk Bar</a></li>
 				<li><a href="#">FAQ</a></li>
 				<li><a href="#">Contact Us</a></li>
@@ -357,10 +360,9 @@
 				<li><a href="#">What We Stand For</a></li>
 				<li><a href="#">Party Tips</a></li>
 			</ul>
-			<ul>
 
+			<h3>Community</h3>
 			<ul>
-				<h3>Community</h3>
 				<li><a href="#">Delivery</a></li>
 				<li><a href="#">Grocery</a></li>
 				<li><a href="#">Corporate Gifts</a></li>
@@ -376,4 +378,7 @@
 			<a href="#">Accessibility</a>
 		</nav>
 	</footer>
+	
+	<script defer src="scripts/script.js"></script>
 </body>
+</html>

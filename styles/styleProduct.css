@@ -72,14 +72,14 @@ main > section > h1 {
     width: 1px;
 }
 
-h1 {
-    text-transform: capitalize;
-    font-weight: 300;
-}
-
 main > section:nth-of-type(2) > h2 {
     text-transform: capitalize;
     font-weight: 400;
+    padding-top: 10px;
+}
+
+main > section:nth-of-type(2) > p:nth-of-type(3),
+main > section:nth-of-type(2) > p:last-of-type {
     padding-top: 10px;
 }
 
@@ -358,10 +358,25 @@ main > section:nth-of-type(4) > label {
 main > button:first-of-type {
     margin-left: 0;
     width: 100%;
-    background-color: var(--color-button-bg);
+    background-color: var(--color-button-bg); 
 }
 
+.popup-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 120px;
+    height: auto;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 2;
+}
 
+.popup-img.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
 
 
 

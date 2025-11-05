@@ -31,3 +31,30 @@ function sluitMenu() {
     var deNav = document.querySelector("body > header > nav:nth-of-type(3)");
     deNav.classList.remove("toonMenu");
 }
+
+
+// Confetti toevoegen als er op de knop 'add to cart' wordt gedrukt op de product.html - dit is mijn micro-interactie
+var confettiButton = document.querySelector("body > main > button:first-of-type");
+
+confettiButton.addEventListener("click", function() {
+
+    var popup = document.createElement("img");
+    popup.src = "images/productpage/buttonConffetti1-1.png"; 
+    popup.alt = 'Confetti';
+    popup.classList.add('popup-img');
+
+    document.body.appendChild(popup);
+
+    setTimeout(function() {
+        popup.classList.add('show');
+  }, 10);
+
+    setTimeout(function() {
+    popup.remove();
+  }, 1200);
+});
+
+// https://www.w3schools.com/jsref/event_onclick.asp
+// https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/
+// https://www.w3schools.com/jsref/met_win_settimeout.asp
+

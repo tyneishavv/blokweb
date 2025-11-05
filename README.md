@@ -215,8 +215,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Probeer z.s.m. de img's te plaatsen in je document en de alt tekst erin toe te voegen;
   - Sections moeten een heading bevatten.
 
-  <img src="readme-images/voortgangsgesprekken/vg1_home1.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 1/2">
-  <img src="readme-images/voortgangsgesprekken/vg1_home2.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 2/2">
+  <img src="readme-images/vg1_home1.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 1/2">
+  <img src="readme-images/vg1_home2.png" width="375px" alt="Feedback studentassistenten opgenomen in de opmerkingen in de homepagina 2/2">
 
 </details>
 
@@ -271,6 +271,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Ik ben erachter gekomen dat ik mijn HTML nog even goed moet valideren
+  - Ik ben erachter gekomen dat mijn taal niet goed stond: eng in plaats van en
+  - Mijn focus states heb ik ontwikkeld nadat ik de toegankelijkheidstest had gedaan
 
 </details>
 
@@ -328,7 +331,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Homepagina_Eindversie.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -343,8 +346,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Ik vond het lastig om de slideshow te maken in mijn tweede pagina (de productpagina), ik wist niet hoe ik de nav (de kleine afbeeldingen) kleiner kon maken zodat het dezelfde hoogte zou hebben als de uitgelichte foto. 
   - Ik vond het lastig om mijn tweede pagina responsive te maken, maar dit was mij uiteindelijk gelukt door de hele main in een grid te plaatsen.
   - Ik heb moeite gehad bij het ontwikkelen van mijn hamburgermenu. Het is mij niet gelukt om de homepagina te dimmen wanneer het hamburgermenu te zien is. 
+  - Als ik meer tijd had, had ik de mobiele nav in de main, een nav gemaakt in plaats van een section. Ik probeerde dit aan te passen in mijn code, maar het was niet meer mogelijk om dit op tijd af te ronden.
+  - Ik krijg mijn slideshow niet uit mijn footer, dat vond ik ook wel heel jammer. Dat ik daar uiteindelijk niet genoeg tijd meer voor had om dat op te lossen.
+  - Tenslotte vind ik het jammer dat het mij niet is gelukt om de arrows toe te voegen aan mijn carrousels, dit zorgt er jammer genoeg voor dat het alleen scrollbaar is door middel van horizontaal scrollen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Productpagina_Eindversie.png" width="375px" alt="productpagina eindversie">
 </details>
 
 
@@ -375,11 +381,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. Toggle Switch - https://www.w3schools.com/howto/howto_css_switch.asp 
   3. Een linear gradient maken voor mijn kortingscode bar - https://www.w3schools.com/css/css3_gradients.asp
   4. Margin op -1 zetten zodat ik geen spacing meer heb aan de rechterkant - https://stackoverflow.com/questions/11495200/how-do-negative-margins-in-css-work-and-why-is-margin-top-5-margin-bottom5 
+  5. Micro-interactie - https://www.w3schools.com/jsref/event_onclick.asp
+  6. Micro-interactie - https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/
+  7. Micro-interactie - https://www.w3schools.com/jsref/met_win_settimeout.asp
 
   General
   1. Mijn navigatie sticky maken op de webpagina - https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
   2. Het verbergen van content op de webpagina maar het wel benoemen in de screenreader - https://www.a11yproject.com/posts/how-to-hide-content/ 
   3. Hamburgermenu ontwikkelen met HTML, CSS en Javascript - https://codepen.io/shooft/pen/myepoJo?editors=1100
   4. Gebruik maken van de verschillende states - https://zellwk.com/blog/style-hover-focus-active-states/
-  
+
 </details>

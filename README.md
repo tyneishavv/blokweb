@@ -339,9 +339,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Ik heb geleerd hoe ik een responsive webpagina kan ontwikkelen! Ik had geen idee hoe dit moest en zag dit voor het eerst bij een medestudent tijdens de feedbacksessies met de studentassistente. Dit is hoe ik leerde om mijn webpagina's responsive te maken. Toen vond ik het een stuk minder eng om zelf te proberen.
   - Ik heb vooral veel geleerd over grid. Ik had niet verwacht dat ik dit zo een handige tool zou vinden om mijn secties te stijlen. Dit heeft mij enorm geholpen bij het ontwikkelen van mijn webpagina's en ik kreeg het na een paar keer oefenen steeds meer onder de knie. Mijn voorkeur gaat nu ook meer naar grid dan naar flexbox.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
-
   ### Dit was lastig/Is niet gelukt:
   - Ik vond het lastig om de slideshow te maken in mijn tweede pagina (de productpagina), ik wist niet hoe ik de nav (de kleine afbeeldingen) kleiner kon maken zodat het dezelfde hoogte zou hebben als de uitgelichte foto. 
   - Ik vond het lastig om mijn tweede pagina responsive te maken, maar dit was mij uiteindelijk gelukt door de hele main in een grid te plaatsen.
